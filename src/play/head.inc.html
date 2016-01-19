@@ -1,42 +1,58 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta name="viewport" content="width=device-width" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<!-- Solving https://github.com/jonkemp/inline-css/issues/8 would make things nicer. -->
-<link rel="stylesheet" href="play.css">
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Solving https://github.com/jonkemp/inline-css/issues/8 would make things nicer. -->
+    <link rel="stylesheet" href="play.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <style type="text/css">
-  /* Responsive stuff goes here (inline css doesn't know what to do with it). */
-  @media only screen and (max-width:560px){
-    .footer td{
-      font-size: 12px!important;
+/* Responsive stuff goes here (inline css doesn't know what to do with it). */
+
+@media only screen and (max-width:768px) {
+    .footer {
+        /* @todo gulp-inline-css doesn't parse background-color -> bgcolor */
+        padding: 20px 30px 0px 30px!important;
+    }
+    .footer td {
+        font-size: 10px!important;
+        padding: 0px 0 17px 0;
+    }
+    .footer__main__col1 {
+        width: 100%!important;
+    }
+    .footer__main__col1__td {
+        text-align: left;
+    }
+    .footer__main__col1__td > span {
+        margin-bottom: 10px;
+    }
+    .footer__main__col2 {
+        width: 100%!important;
+        margin: 20px 0;
+    }
+    .footer__main__col2__td {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .footer__main__col2__td__img {
+        padding-left: 0!important;
+    }
+    h2 {
+        text-align: center;
+        line-height: 10px;
     }
 
-    .footer__main__col1{
-      width: 100%!important;
+    .list-item {
+        margin-top: 55px!important;
+        width: 324px;
+        margin-left: auto!important;
+        margin-right: auto!important;
     }
-
-    .footer__main__col1__td{
-      text-align: left;
+    .list-item li {
+        line-height: 15px;
     }
-
-    .footer__main__col1__td > span{
-      margin-bottom:10px;
-    }
-
-    .footer__main__col2{
-      width: 100%!important;
-    }
-
-    .footer__main__col2__td{
-      text-align: left;
-      padding-bottom:20px;
-    }
-
-    .footer__main__col2__td__img{
-      padding-left:0!important;
-    }
-  }
+}
 </style>

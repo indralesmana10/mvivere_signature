@@ -1,36 +1,52 @@
-<td class="footer" bgcolor="#303030">
-  <!-- @todo gulp-inline-css can't use width in percentages -->
-  <table class="rbcc footer__main" width="100%">
-    <tr>
-      <!-- @todo gulp-inline-css doesn't parse align -->
-      <td class="footer__main__signature" align="left">
-        <!-- @echo signature --><br />
-        <strong><!-- @echo name --></strong><br />
-      </td>
-    </tr>
-
-    <!-- @todo gulp-inline-css doesn't add height attrs -->
-    <tr class="spd" height="60px"></tr>
-
-    <tr>
-      <!-- @todo gulp-inline-css can't use width in percentages, doesn't parse align -->
-      <table class="rbcc footer__main__col2" width="30%" align="right">
-        <!-- @todo gulp-inline-css doesn't parse align -->
-        <td class="footer__main__col2__td" align="right">
-          <a href="<!-- @echo website -->">
-            <img src="<!-- @echo logoUrl -->" alt="<!-- @echo logoAlt -->" class="footer__main__col2__td__img"/>
-          </a>
-        </td>
-      </table>
-
-      <!-- @todo gulp-inline-css can't use width in percentages, doesn't parse align -->
-      <table class="rbcc footer__main__col1" width="70%" align="left">
-        <td class="footer__main__col1__td" align="left">
-          <span><!-- @echo slogan --></span><br/>
-          <!-- @echo contactMain -->
-          <a href="mailto:<!-- @echo contactMail -->" target="_blank"><!-- @echo contactMail --></a>
-        </td>
-      </table>
-    </tr>
-  </table>
+<td class="footer" bgcolor="#231F20">
+    <!-- @todo gulp-inline-css can't use width in percentages -->
+    <table class="rbcc footer__main" width="100%">
+        <tr>
+            <!-- @todo gulp-inline-css can't use width in percentages, doesn't parse align -->
+            <table class="rbcc footer__main__col2" width="30%" align="right">
+                <!-- @todo gulp-inline-css doesn't parse align -->
+                <td class="footer__main__col2__td" align="right">
+                    <a href="<!-- @echo website -->">
+                      <img src="assets/img/logo.png" alt="<!-- @echo logoAlt -->" class="footer__main__col2__td__img"/>
+                    </a>
+                </td>
+            </table>
+            <!-- @todo gulp-inline-css can't use width in percentages, doesn't parse align -->
+            <table class="rbcc footer__main__col1" width="70%" align="left">
+                <td class="footer__main__col1__td" align="left">
+                    <h2><!-- @echo name --></h2>
+                    <h2><!-- @echo position --></h2>
+                    <ul class="list-item">
+                        <li>
+                            <ul>
+                                <li class="item">W.</li>
+                                <li class="item">:</li>
+                                <li class="item">www.mvivere.com</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li class="item">E.</li>
+                                <li class="item">:</li>
+                                <li class="item">vivek@mvivere.com</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li class="item">P.</li>
+                                <li class="item">:</li>
+                                <li class="item">+6596844904</li>
+                            </ul>
+                        </li>
+                    </ul>
+    
+                </td>
+            </table>
+            <table class="rbcc footer__main__col3" width="100%">
+                <td class="footer__main__col3__td">
+                    <h3 class="tagline">REMEMBER TO LIVE</h3>
+                </td>
+            </table>
+        </tr>
+    </table>
 </td>
