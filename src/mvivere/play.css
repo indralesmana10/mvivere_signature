@@ -99,8 +99,8 @@ a {
 
 .footer {
     /* @todo gulp-inline-css doesn't parse background-color -> bgcolor */
-    background-color: #231F20;
-    padding: 60px 60px 0px 60px;
+    background-color: #fff;
+    padding: 10px;
     color: #f5f5f5;
 }
 
@@ -133,7 +133,7 @@ a {
 
 .footer__main__col1 {
     /* @todo gulp-inline-css can't use width in percentages */
-    width: 70%;
+    width: 25%;
     /* @todo gulp-inline-css doesn't parse align */
     align: left;
 }
@@ -157,7 +157,7 @@ a {
 
 .footer__main__col2 {
     /* @todo gulp-inline-css can't use width in percentages */
-    width: 30%;
+    width: 25%;
     /* @todo gulp-inline-css doesn't parse align */
     align: right;
 }
@@ -173,7 +173,7 @@ a {
     border: 0;
     padding-left: 20px;
     max-width: 100%;
-    max-height: 230px;
+    max-height: 85px;
     height: auto;
 }
 
@@ -181,12 +181,4 @@ a {
     text-align: center;
 }
 
-h2{
-  font-size: 2em;
-}
 
-h3.tagline {
-    padding: 30px 0;
-    color: #968170;
-    font-size: 1.5em
-}
