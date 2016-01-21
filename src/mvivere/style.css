@@ -23,7 +23,8 @@ ul.list-item li.item{
 
 li.item {
     display: inline-block;
-    font-size: 0.7em;
+    font-size: 1.1em;
+    color: #9C937A
 }
 
 li.item:nth-child(1),
@@ -37,14 +38,14 @@ li.item:nth-child(2) {
 }
 
 h2 {
-    font-size: 0.9em;
+    font-size: 1.2em;
     margin: 0;
 }
 
 h3.tagline {
     padding: 30px 0;
     color: #968170;
-    font-size: 0.7em
+    font-size: 1.2em
 }
 
 .gs li{
